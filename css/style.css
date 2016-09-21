@@ -61,10 +61,14 @@ img.app-button{max-width:30%;}
 
 img.google-button{max-width:26%;}
 
-.instaplusdetails{
-margin-top: -76px;
+.instaplusdetails {
+    margin-top: 0px;
+    margin: 0 auto;
+    display: block;
+    max-width: 1024px;
+    position: relative;
+    top: -30px;
 }
-
 .insta-button {
     background: linear-gradient(#2e6593, #1d5c93);
   color: #fff;
