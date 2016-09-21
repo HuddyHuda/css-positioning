@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Instagram</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <style type="text/css">
 
   body, div, h1, p, h2, h3, h4, li{
@@ -15,11 +14,7 @@
 .blue-header{
   height :280px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,258dc8+100;Blue+Flat+%231 */
-background: #258dc8; /* Old browsers */
-background: -moz-linear-gradient(top,  #258dc8 0%, #258dc8 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #258dc8 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #258dc8 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+background :#06365f;
 }
 
 .insta-phone img{
@@ -43,10 +38,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', end
 
 }
 
-.insta-desc{
-background-image:url(img/frame.png);
-margin-top:0px;
-  background-color: #fff; padding:10px 30px; border-radius: 10px;
+.insta-desc {
+    background-image: url(img/frame.png);
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 10px 30px;
+      width: 444px;
+    border-radius: 10px;
+}
+
+.insta-button p {
+    margin-top: -20px;
+    font-size: 11px;
+    position: relative;
+    left: 32px;
+    top:2px;
+}
+
+.insta-button{
+  width: 75px;
+      margin-right: -45px;
 }
 
 .insta-details-box {
@@ -57,12 +69,28 @@ img.app-button{max-width:30%;}
 
 img.google-button{max-width:26%;}
 
+.instaplusdetails{
+  margin-top: -76px;
+}
 
-.insta-details-box h1{font-size:20px; font-weight:bold; color:rgb(8, 115, 168); }
+.insta-button {
+      background: linear-gradient(#2e6593, #1d5c93);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid black;
+    float: right;
+    padding: 5px 7px;
+    margin-top: -54px;
+}
+
+.insta-button img{margin-right:10px;}
+
+
+.insta-details-box h1{font-size:20px; font-weight:bold; color: #06365f; }
 
 .footer-links ul {margin:0 auto; display:Block; text-align:center;}
 
-.footer-links li{ display:inline-block; margin:10px; text-transform:uppercase; color:rgb(8, 115, 168); }
+.footer-links li{ font-weight: bold; font-size: 12px; display:inline-block; margin:10px; text-transform:uppercase; color:#06365f;; }
 
   </style>
 </head>
@@ -84,9 +112,11 @@ img.google-button{max-width:26%;}
   <div class="insta-details-box">
 
 
-
+<div class="instalogoandbutton">
       <div class="insta-logo"><img src="img/brand.png"/></div>
-  
+      <div class="insta-button"><img src="img/home.png"/><p>Log In</p></div>
+    </div><!--endofinstalogoandbutton-->
+
 
       <div class="insta-desc">
 
@@ -128,7 +158,7 @@ img.google-button{max-width:26%;}
       <li>  Privacy</li>
       <li>  Terms</li>
 
-      INSTAGRAM 2014
+      <li style="color:grey;">INSTAGRAM 2014</li>
 
     </ul>
 
